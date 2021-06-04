@@ -1,15 +1,22 @@
 .sidebar{
+    display: flex;
     flex: 0.35;
+    flex-direction: column;
     background-color: rgb(41, 40, 40);
     color:white !important;
+    
+    
 }
 .sidebar__header {
     display: flex;
+    
     padding:10px; 
     justify-content: space-between;
     box-shadow: 0 .75px  rgb(233, 233, 233);
     border-right: 1px solid rgb(233, 233, 233);
     background-color: rgb(31, 30, 31);
+    position: sticky;
+    
 
     
 }
@@ -59,4 +66,19 @@
 .sidebar__searchContainer > .MuiSvgIcon-root{
     color:grey;
     padding: 10px;
+}
+.sidebar__chats{
+
+    flex: 1;
+    flex-direction: column;
+    
+    height: 93vh;
+    
+    overflow: scroll;
+    text-decoration: none;
+    
+
+}
+::-webkit-scrollbar{
+    display: none;
 }

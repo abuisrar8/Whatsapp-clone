@@ -1,0 +1,33 @@
+.login{
+    height: 94vh;
+    width: 100vw;
+    display: grid;
+    place-items: center;
+}
+.login__container{
+    padding: 100px;
+    text-align: center;  
+    transition: 500ms;  
+        
+}
+.login__container > img{
+    width: 50px;
+}
+.login__container:hover{
+    
+    box-shadow:0 0 30px 0 rgba(255, 255, 255, 0.451); 
+}
+.login > Button:active{
+    transform:skewY(5) !important;
+    color: cornflowerblue !important;
+   
+    
+}
+
+
+
+.login > Button{
+    color: rgb(255, 255, 255) !important;
+    margin: 100px !important;
+    text-transform: inherit !important;
+}

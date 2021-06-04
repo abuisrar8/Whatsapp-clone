@@ -1,34 +1,18 @@
 .app{
-  height: 100vh;
-  display: grid;  
+  display: grid;
   place-items: center;
- 
+  background-color:black;
+  height: 90vh;
 }
-.app > header{
 
-  width: 100%;
-  margin: auto;
-  margin-left: 0;
-  margin-bottom: 0;
-  box-shadow: 0 .75px  rgb(233, 233, 233);
-  position: sticky;
-  
 
-}
-.app>header>div{
-  float: left;
-}
-.app>header .menu{
-  float: right;
-  margin: 5px 10px;
 
-}
 .app__body{
   display: flex;
-  min-height: 95vh;
- 
-  width: 100vh;
-  margin-top: 0;
-  background-color:grey;
   
+  background-color: #c0bcbc;
+  margin-top:0;
+  height: 94vh;
+  width: 90vh;
+  box-shadow: -1px 4px 20px -6px rgba(0, 0, 0, 1);
 }
