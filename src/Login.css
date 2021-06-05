@@ -7,15 +7,20 @@
 .login__container{
     padding: 100px;
     text-align: center;  
-    transition: 500ms;  
+    transition: 500ms; 
+    
+    animation-name: flick;
+    animation-iteration-count: infinite;
+     
+    animation-duration: 2s;
         
 }
 .login__container > img{
     width: 50px;
 }
 .login__container:hover{
-    
-    box-shadow:0 0 30px 0 rgba(255, 255, 255, 0.451); 
+    animation-play-state:paused; 
+   
 }
 .login > Button:active{
     transform:skewY(5) !important;
@@ -23,11 +28,28 @@
    
     
 }
+.login > Button:hover{
 
+    box-shadow:0 0 50px 0 rgba(255, 255, 255, 0.451);
+}
+ 
 
 
 .login > Button{
     color: rgb(255, 255, 255) !important;
     margin: 100px !important;
     text-transform: inherit !important;
+    
+    
+    
 }
+@keyframes flick {
+    from {
+        box-shadow:0 0 10px 0 rgba(251, 5, 5, 0.354);
+    }
+  
+    to {
+        box-shadow:0 0 10px 0 rgba(255, 255, 255, 0.382);
+    }
+  }
+  
